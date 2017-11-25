@@ -9,6 +9,10 @@
   background-color: royalblue;
 }
 
+.example-sidenav {
+  padding: 20px;
+  z-index: 4;
+}
 
 
 
