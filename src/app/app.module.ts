@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes, } from '@angular/router';
 import { AppNavigationComponent } from './app-navigation/app-navigation.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AppNavigationComponent
+    AppNavigationComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

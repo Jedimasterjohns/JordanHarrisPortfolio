@@ -1,0 +1,17 @@
+.sidenav {
+  padding: 20px;
+  z-index: 4;
+  width: 240px;
+  overflow: hidden;
+  background-color: darkgray;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-family: "san-serif";
+  font-size: 2rem;
+  padding: 25px;
+}
