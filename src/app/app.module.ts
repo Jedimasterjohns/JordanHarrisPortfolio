@@ -10,13 +10,15 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes, } from '@angular/router';
 import { AppNavigationComponent } from './app-navigation/app-navigation.component';
 import { ResumeComponent } from './resume/resume.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AppNavigationComponent,
-    ResumeComponent
+    ResumeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

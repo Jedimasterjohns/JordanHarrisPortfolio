@@ -9,23 +9,4 @@
   background-color: royalblue;
 }
 
-.sidenav-content {
-  position: absolute;
-  top: 20px;
-  right: 50px;;
-  border-color: black;
-}
-
-button {
-  background-color: royalblue;
-  border-color: black;
-}
-div {
-  width: 30px;
-  height: 5px;
-  background-color: black;
-  margin: 4px 0;
-
-}
-
 

@@ -1,8 +1,19 @@
-<div class="sidenav">
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Portfolio</li>
-    <li><a [routerLink]="['/resume']">Resume</a></li>
-  </ul>
-</div>
+
+    <mat-sidenav mode="push" #sidenav position="end">
+      <div class="sidenav">
+        <ul>
+          <li><a [routerLink]="['/home']">Home</a></li>
+          <li><a [routerLink]="['/about']">About</a></li>
+          <li>Portfolio</li>
+          <li><a [routerLink]="['/resume']">Resume</a></li>
+        </ul>
+      </div>
+    </mat-sidenav>
+    <div class="sidenav-content">
+      <button type="button" mat-button (click)="sidenav.open()">
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+      </button>
+    </div>
+
