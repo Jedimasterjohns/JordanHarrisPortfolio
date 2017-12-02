@@ -5,6 +5,7 @@
   overflow: hidden;
   background-color: #515151;
   height: 100vh;
+<<<<<<< HEAD
   box-shadow: inset 6px 0 6px 1px #333;
 }
 
@@ -25,17 +26,32 @@ button {
   height: 5px;
   background-color: black;
   margin: 4px 0;
+=======
+  box-shadow: inset 6px 0 10px 1px #333;
+  display: block;
+>>>>>>> 0d13a0e9f8391999c6e39df83db7fb6cd99693d0
 }
 
 ul {
   list-style-type: none;
+  margin-top: 80px;
 }
 
 li {
+<<<<<<< HEAD
   font-family: Sans-Serif;
   font-size: 2rem;
   color: white;
+=======
+>>>>>>> 0d13a0e9f8391999c6e39df83db7fb6cd99693d0
   padding: 25px;
+  display: list-item;
+}
+
+a {
+  font-family: helvetica, "sans serif";
+  font-size: 2.3rem;
+  text-align: center;
 }
 
 a {
