@@ -1,3 +1,19 @@
+@mixin animation($name) {
+  -webkit-animation: #{$name};
+  -moz-animation: #{$name};
+  -ms-animation: #{$name};
+  -o-animation: #{$name};
+  animation: #{$name};
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; }
+  @-o-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}
+
 .container {
   box-sizing: border-box;
   height: 100vh;
