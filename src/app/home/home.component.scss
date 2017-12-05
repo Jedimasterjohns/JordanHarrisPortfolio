@@ -45,6 +45,8 @@ div.icon-bar {
 
 .site-intro-content {
   padding: 20vmin 10vmin;
+  color: white;
+  font-size: 1.4rem;
 }
 
 h1 {
@@ -60,13 +62,32 @@ h1 {
   z-index: 100;
 }
 
-.typed-cursor{
+.typed-cursor {
+  font-size: 100px;
+  color: white;
   opacity: 1;
   @include animation(blink 0.7s infinite);
 }
 
-@include keyframes(blink) {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; }
+  @-o-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}
+
+@mixin animation($name) {
+  -webkit-animation: #{$name};
+  -moz-animation: #{$name};
+  -ms-animation: #{$name};
+  -o-animation: #{$name};
+  animation: #{$name};
+}
+
+.intro-text {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.4rem;
 }
