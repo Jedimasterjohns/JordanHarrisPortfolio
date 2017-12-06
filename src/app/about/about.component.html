@@ -1,3 +1,41 @@
-<p>
-  about works!
-</p>
+<mat-sidenav-container class="about-container">
+  <nav class="link-to-home">
+      <a [routerLink]="['/home']"><i class="fa fa-angle-left"></i>&nbsp;&nbsp;&nbsp;Jordan<strong>Harris</strong></a>
+  </nav>
+  <mat-sidenav mode="push" #sidenav position="end">
+    <app-navigation></app-navigation>
+  </mat-sidenav>
+
+  <div class="sidenav-content">
+    <button type="button" mat-button (click)="sidenav.open()">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+    </button>
+  </div>
+
+  <section class="about-longform-container">
+      <div class="about-content">
+        <h1 class="about-greeting">About.&nbsp;&nbsp;
+          <small><a href="https://twitter.com/Dusk07"><i class="fa fa-twitter-square"></i></a></small>
+          <small><a href="https://www.linkedin.com/in/jordan-harris-0037424a/"><i class="fa fa-linkedin-square"></i></a></small>
+          <br/>
+        </h1>
+        <p class="about-longform text-indent">
+          My name is Ryan Johns and I build software. I am an Automation Engineer at Xactware Solutions. I enjoy building testing frameworks from scratch, designing
+          impactful web experiences, and taking long walks on the beach.
+        </p>
+        <p class="about-longform text-indent">
+            I grew up in Seattle and I think about moving back there everyday. I received my bachelors degree in Exercise Science at Brigham Young University.
+            My career in the tech sector kicked off by working in business development at <a href="https://insidesales.com">InsideSales.com</a> for their sales software solution.
+            Later on I worked as a QA Analyst with the property estimation software platform at <a href="https://xactware.com">Xactware</a> before quickly transitioning into
+            a full stack automation testing role. I briefly worked with <a href="http://zamplebox.com">ZampleBox</a> to create a web automated testing
+            suite from the ground up before finding myself back at Xactware to help build our next generation platform.
+        <p class="about-longform text-indent">
+          I am a self starter and I continue to learn coding best practices on my own time everyday. I currently live near Utah's Silicon Slopes with my lovely wife and young son.
+        </p>
+        <br/>
+        <strong><a [routerLink]="['/resume']">View resume&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a></strong>
+      </div>
+    </section>
+</mat-sidenav-container>

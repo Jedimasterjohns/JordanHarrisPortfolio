@@ -14,7 +14,7 @@
   @keyframes #{$name} { @content; }
 }
 
-.container {
+.home-container {
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
@@ -24,23 +24,9 @@
   background-color: royalblue;
 }
 
-.sidenav-content {
-  position: absolute;
-  top: 20px;
-  right: 50px;;
-  border-color: black;
-}
-
 button {
   background-color: royalblue;
   border-color: white;
-}
-
-div.icon-bar {
-  width: 30px;
-  height: 5px;
-  background-color: white;
-  margin: 4px 0;
 }
 
 .site-intro-content {

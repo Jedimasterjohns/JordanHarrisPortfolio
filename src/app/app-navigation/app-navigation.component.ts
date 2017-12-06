@@ -4,7 +4,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 @Component({
   selector: 'app-navigation',
   templateUrl: './app-navigation.component.html',
-  styleUrls: ['./app-navigation.component.css']
+  styleUrls: ['./app-navigation.component.scss']
 })
 export class AppNavigationComponent implements OnInit {
 

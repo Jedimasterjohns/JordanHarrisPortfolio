@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~font-awesome/scss/font-awesome.scss';
+
+$fa-font-path: "../node_modules/font-awesome/fonts";
+
+* {
+  text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+  color: white;
+  outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+.sidenav {
+  padding: 20px;
+  z-index: 4;
+  width: 240px;
+  overflow: hidden;
+  background-color: #515151;
+  height: 100vh;
+  box-shadow: inset 6px 0 10px 1px #333;
+  display: block;
+}
+
+.sidenav-content {
+  position: absolute;
+  top: 20px;
+  right: 50px;;
+  border-color: black;
+}
+
+.icon-bar {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.link-to-home {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  font-size: 1.2rem;
+}
+
+.text-indent {
+  text-indent: 30px;
+}

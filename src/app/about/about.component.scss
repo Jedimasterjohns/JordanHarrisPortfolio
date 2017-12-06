@@ -1,0 +1,40 @@
+.about-container {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  margin: -10px;
+  padding: 0;
+  clear: both;
+  background-color: #f4f5f5;
+}
+
+button {
+  background-color: #f4f5f5;
+  border-color: black;
+}
+
+div.icon-bar {
+  background-color: black;
+}
+
+.link-to-home a {
+  color: black;
+  font-family: sans-serif;
+}
+
+.about-longform-container {
+  .about-content {
+    padding: 10vh 5vw;
+    padding-top: 20vh;
+    margin-right: 5vw;
+
+    .about-greeting {
+      margin-bottom: 4rem;
+    }
+
+    p.about-longform {
+      width: 60vw;
+      font-size: 1.2rem;
+    }
+  }
+}
