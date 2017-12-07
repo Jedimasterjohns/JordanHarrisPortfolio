@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { FontAwesome } from '../../../node_modules/font-awesome';
 
 @Component({
   selector: 'app-navigation',

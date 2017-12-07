@@ -24,6 +24,11 @@
   background-color: royalblue;
 }
 
+a, a:visited, a:hover, a:active {
+  color: white;
+  outline: 0;
+}
+
 button {
   background-color: royalblue;
   border-color: white;

@@ -8,6 +8,11 @@
   background-color: #f4f5f5;
 }
 
+a, a:visited, a:hover, a:active {
+  color: blue;
+  outline: 0;
+}
+
 button {
   background-color: #f4f5f5;
   border-color: black;
@@ -37,4 +42,9 @@ div.icon-bar {
       font-size: 1.2rem;
     }
   }
+}
+
+.link-to-resume a {
+  color: black;
+  font-family: sans-serif;
 }
