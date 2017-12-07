@@ -1,0 +1,49 @@
+.resume-container {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100vw;
+  margin: -10px;
+  clear: both;
+  background-color: #f4f5f5;
+  margin: -10px;
+  padding: 0;
+  overflow-x: hidden;
+  h1 {
+    font-size: 2.75rem;
+  }
+  .resume-content {
+    padding: 10vh 5vw;
+    padding-top: 15vh;
+    margin-right: 5vw;
+    a {
+      font-size: 1.5rem;
+    }
+
+    .resume-greeting {
+      margin-bottom: 2rem;
+    }
+
+    #resume-embed {
+      height: 107rem;
+      width: 53rem;
+      max-width: 90vw;
+      border: none;
+      box-shadow: 0 0 5px black;
+    }
+  }
+}
+
+div.icon-bar {
+  background-color: black;
+}
+
+button {
+  background-color: #f4f5f5;
+  border-color: black;
+}
+
+@media (max-width: 767px) {
+  .hide-for-small-down {
+     display: none;
+  }
+}

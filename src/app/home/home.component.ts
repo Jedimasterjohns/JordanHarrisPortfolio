@@ -9,7 +9,10 @@ import * as Typed from 'typed.js';
 })
 
 export class HomeComponent implements AfterViewInit {
-  constructor() { }
+  public showScrollPrompter: Boolean;
+  constructor() {
+    this.showScrollPrompter = false;
+   }
 
   ngAfterViewInit() {
     const greetingLine =  'UX/UI Designer with a voracious curiosity and a tenacity for creativity.<br>' +
@@ -18,10 +21,13 @@ export class HomeComponent implements AfterViewInit {
     let typed = new Typed('.intro-text', {
       strings: [greetingLine],
       startDelay: 1500,
-      typeSpeed: 25,
+      typeSpeed: 10,
       autoInsertCss: true,
       cursorChar: ' |',
-      fadeOut: true
+      fadeOut: true,
+      onComplete: function() {
+        return this.showScrollPrompter = true;
+      }
     });
   }
 }
