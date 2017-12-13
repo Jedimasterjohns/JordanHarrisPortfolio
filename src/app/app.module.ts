@@ -13,6 +13,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
+import { GlobalServiceManager } from './_services/global-service-manager.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     MatSidenavModule,
     routing
   ],
-  providers: [],
+  providers: [
+    GlobalServiceManager
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

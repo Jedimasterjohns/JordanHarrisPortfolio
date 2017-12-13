@@ -1,6 +1,8 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import * as Typed from 'typed.js';
+import { GlobalServiceManager } from '../_services/global-service-manager.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +11,10 @@ import * as Typed from 'typed.js';
 })
 
 export class HomeComponent implements AfterViewInit {
-  public showScrollPrompter: Boolean;
-  constructor() {
-    this.showScrollPrompter = false;
+  showScrollPrompter: Observable<boolean>;
+
+  constructor(private globalServiceManager: GlobalServiceManager) {
+    this.showScrollPrompter = globalServiceManager.showScrollPrompter;
    }
 
   ngAfterViewInit() {
@@ -25,9 +28,7 @@ export class HomeComponent implements AfterViewInit {
       autoInsertCss: true,
       cursorChar: ' |',
       fadeOut: true,
-      onComplete: function() {
-        return this.showScrollPrompter = true;
-      }
+      onComplete: () => { this.globalServiceManager.activateScrollPrompter(); }
     });
   }
 }
