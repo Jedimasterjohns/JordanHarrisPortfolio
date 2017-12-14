@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
 import { GlobalServiceManager } from './_services/global-service-manager.service';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GlobalServiceManager } from './_services/global-service-manager.service
     AppNavigationComponent,
     ResumeComponent,
     AboutComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

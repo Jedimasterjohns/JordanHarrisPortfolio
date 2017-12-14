@@ -1,16 +1,11 @@
 <div class="portfolio-container">
   <section class="portfolio-showcase">
-      <div class="wrapper">
-        <div>
-          <h1 class="resume-greeting">Featured Projects.</h1>
-        </div>
-        <div>
-          <figure></figure>
-        </div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-      </div>
+    <h1 class="resume-greeting">Featured Projects.</h1>
+    <div class="project-list">
+      <app-project
+      *ngFor='let project of projects'
+      [project]='project'>
+    </app-project>
+    </div>
     </section>
 </div>
