@@ -11,10 +11,8 @@ import { RouterModule, Routes, } from '@angular/router';
 import { AppNavigationComponent } from './app-navigation/app-navigation.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
 
 import { GlobalServiceManager } from './_services/global-service-manager.service';
-import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +20,7 @@ import { ProjectComponent } from './project/project.component';
     HomeComponent,
     AppNavigationComponent,
     ResumeComponent,
-    AboutComponent,
-    PortfolioComponent,
-    ProjectComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,

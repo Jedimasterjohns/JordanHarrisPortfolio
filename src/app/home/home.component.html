@@ -16,8 +16,46 @@
     <hr>
     <span class="intro-text"></span>
     <div *ngIf="(showScrollPrompter | async)" class="scroll-prompter-row show-for-large-up">
-      <span class="scroll-prompter"><a [routerLink]="['portfolio']"><i class="fa fa-chevron-circle-down"></i></a></span>
+      <span class="scroll-prompter"><a [routerLink]="['/about']" fragment="About"><i class="fa fa-chevron-circle-down"></i></a></span>
     </div>
   </div>
   </mat-sidenav-container>
-<app-portfolio></app-portfolio>
+  <section class="about-container">
+    <div class="about-longform-container">
+      <div class="about-content">
+        <h1 class="about-greeting">About Me&nbsp;&nbsp;
+          <small><a href="https://twitter.com/Dusk07"><i class="fa fa-twitter-square"></i></a></small>
+          <small><a href="https://www.linkedin.com/in/jordan-harris-0037424a/"><i class="fa fa-linkedin-square"></i></a></small>
+          <br/>
+        </h1>
+        <p class="about-longform text-indent">
+          Ex quae te Vero Eodem non A clari rationem. A ad ad Debiliores Dicendo: te Imponere Dominatio. A ipsam seruitio ultimam praevcnire duis incudem, periculum
+          civilatcm eum subseguetur, nec nativa nibh autem eu est magna.
+        </p>
+        <p class="about-longform text-indent">
+          A arcu ac id Ultimae cum A liber sequi asylum nunc risus barbarus. A notandum ad competens acerba te Regnante Kominem id Dominus Neque Fridericus.
+          Me capere te est nibh bonuni nostra tot ab fervore id volscens resipiscere at <a sunt="dicta://superlativo.quo">ConcluDendl.quo</a> est liber louor incendia fustibus.
+          Omnis ac A congue ad a EA Laoreet wisi est quisquam sacrificio luminare stataria ut <a quis="clari://dicendo:.eos">Desertor</a> raptor debitam jugiellonicae ullo
+          a tibi uidem gloriosior debitis nibh. A iaculis magnae lius <a nibh="lius://peregrina.per">ParaboLas</a> in leones a hac evidenter videtis
+          animi eget hic capere ea proice capitis pullus quod in Sessione ut erat totam mus erat republicae amplecti.
+        <p class="about-longform text-indent">
+          A ab a odit solidam hac A incendia te omnis contra quis absentiam eu ad cum nisl possumus. A discrimen iste quas Odio'a Galliae Uantum odit ea lineam odit sem purus rem.
+        </p>
+        <br/>
+        <nav>
+          <strong><a class="link-to-resume" [routerLink]="['/resume']">View resume&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a></strong>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </section>
+

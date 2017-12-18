@@ -22,84 +22,140 @@
   padding: 0;
   clear: both;
   background-color: royalblue;
-}
-
-a, a:visited, a:hover, a:active {
-  color: white;
-  outline: 0;
-}
-
-button {
-  background-color: royalblue;
-  border-color: white;
-}
-
-.site-intro-content {
-  padding: 20vmin 10vmin;
-  color: white;
-  font-size: 1.4rem;
-}
-
-h1 {
-  color: white;
-  font-size: 2.7rem;
-  font-family: "Helvetica", serif;
-}
-
-.scroll-prompter {
-  padding: 0;
-  display: block;
-  font-size: 2.7rem;
-  z-index: 100;
-}
-
-.typed-cursor {
-  font-size: 100px;
-  color: white;
-  opacity: 1;
-  @include animation(blink 0.7s infinite);
-}
-
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} { @content; }
-  @-moz-keyframes #{$name} { @content; }
-  @-ms-keyframes #{$name} { @content; }
-  @-o-keyframes #{$name} { @content; }
-  @keyframes #{$name} { @content; }
-}
-
-@mixin animation($name) {
-  -webkit-animation: #{$name};
-  -moz-animation: #{$name};
-  -ms-animation: #{$name};
-  -o-animation: #{$name};
-  animation: #{$name};
-}
-
-.intro-text {
-  box-sizing: border-box;
-  font-family: sans-serif;
-  color: white;
-  font-size: 1.4rem;
-}
-
-.scroll-prompter-row {
-  width: 100vw;
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
-  text-align: center;
-  @include animation(arrowBounce 0.7s infinite);
-}
-
-.scroll-prompter {
-  padding: 0;
-  display: block;
-  font-size: 2.7rem;
-  z-index: 100;
-  a {
+  a, a:visited, a:hover, a:active {
     color: white;
+    outline: 0;
   }
+
+  button {
+    background-color: royalblue;
+    border-color: white;
+  }
+
+  .site-intro-content {
+    padding: 20vmin 10vmin;
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  h1 {
+    color: white;
+    font-size: 2.7rem;
+    font-family: "Helvetica", serif;
+  }
+
+  .scroll-prompter {
+    padding: 0;
+    display: block;
+    font-size: 2.7rem;
+    z-index: 100;
+  }
+
+  .typed-cursor {
+    font-size: 100px;
+    color: white;
+    opacity: 1;
+    @include animation(blink 0.7s infinite);
+  }
+
+  @mixin keyframes($name) {
+    @-webkit-keyframes #{$name} { @content; }
+    @-moz-keyframes #{$name} { @content; }
+    @-ms-keyframes #{$name} { @content; }
+    @-o-keyframes #{$name} { @content; }
+    @keyframes #{$name} { @content; }
+  }
+
+  @mixin animation($name) {
+    -webkit-animation: #{$name};
+    -moz-animation: #{$name};
+    -ms-animation: #{$name};
+    -o-animation: #{$name};
+    animation: #{$name};
+  }
+
+  .intro-text {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  .scroll-prompter-row {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    text-align: center;
+    @include animation(arrowBounce 0.7s infinite);
+  }
+
+  .scroll-prompter {
+    padding: 0;
+    display: block;
+    font-size: 2.7rem;
+    z-index: 100;
+    a {
+      color: white;
+    }
+  }
+}
+
+
+
+.about-container {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+  margin: -10px;
+  padding: 0;
+  clear: both;
+  background-color: #f4f5f5;
+  p a, p a:visited, p a:hover, p a:active {
+    color: purple;
+    outline: 0;
+  }
+
+  a {
+    color: black;
+  }
+
+  button {
+    background-color: #f4f5f5;
+    border-color: black;
+  }
+
+  div.icon-bar {
+    background-color: black;
+  }
+
+  .about-longform-container {
+    .about-content {
+      padding: 10vh 5vw;
+      padding-top: 15vh;
+      margin-right: 5vw;
+
+      .about-greeting {
+        margin-bottom: 4rem;
+      }
+
+      p.about-longform {
+        width: 60vw;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .link-to-resume {
+    color: black;
+    font-family: sans-serif;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
 }
 
 @include keyframes(arrowBounce) {

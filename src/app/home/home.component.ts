@@ -3,6 +3,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import * as Typed from 'typed.js';
 import { GlobalServiceManager } from '../_services/global-service-manager.service';
 import { Observable } from 'rxjs/Observable';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,8 +14,17 @@ import { Observable } from 'rxjs/Observable';
 export class HomeComponent implements AfterViewInit {
   showScrollPrompter: Observable<boolean>;
 
-  constructor(private globalServiceManager: GlobalServiceManager) {
+  constructor(private globalServiceManager: GlobalServiceManager, router: Router) {
     this.showScrollPrompter = globalServiceManager.showScrollPrompter;
+    router.events.subscribe(s => {
+      if (s instanceof NavigationEnd) {
+        const tree = router.parseUrl(router.url);
+        if (tree.fragment) {
+          const element = document.querySelector('#' + tree.fragment);
+          if (element) { element.scrollIntoView(true); }
+        }
+      }
+    });
    }
 
   ngAfterViewInit() {
