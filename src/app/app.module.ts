@@ -13,7 +13,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 
 import { GlobalServiceManager } from './_services/global-service-manager.service';
-import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
+import { SimpleSmoothScrollModule, SimpleSmoothScrollService } from '../../node_modules/ng2-simple-smooth-scroll';
 
 @NgModule({
   declarations: [
@@ -26,12 +26,13 @@ import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
     SimpleSmoothScrollModule,
+    MatSidenavModule,
     routing
   ],
   providers: [
-    GlobalServiceManager
+    GlobalServiceManager,
+    SimpleSmoothScrollService
   ],
   bootstrap: [AppComponent]
 })
