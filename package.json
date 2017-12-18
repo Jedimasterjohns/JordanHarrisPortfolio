@@ -25,6 +25,7 @@
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "ng2-scroll-to": "^1.0.7",
     "ng2-simple-smooth-scroll": "^0.2.1",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
