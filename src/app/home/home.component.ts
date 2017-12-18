@@ -4,6 +4,7 @@ import * as Typed from 'typed.js';
 import { GlobalServiceManager } from '../_services/global-service-manager.service';
 import { Observable } from 'rxjs/Observable';
 import { Router, NavigationEnd } from '@angular/router';
+import { SimpleSmoothScrollService, SimpleSmoothScrollOption } from 'ng2-simple-smooth-scroll';
 
 @Component({
   selector: 'app-home',
@@ -14,17 +15,9 @@ import { Router, NavigationEnd } from '@angular/router';
 export class HomeComponent implements AfterViewInit {
   showScrollPrompter: Observable<boolean>;
 
-  constructor(private globalServiceManager: GlobalServiceManager, router: Router) {
+  constructor(private globalServiceManager: GlobalServiceManager, private smooth: SimpleSmoothScrollService) {
     this.showScrollPrompter = globalServiceManager.showScrollPrompter;
-    router.events.subscribe(s => {
-      if (s instanceof NavigationEnd) {
-        const tree = router.parseUrl(router.url);
-        if (tree.fragment) {
-          const element = document.querySelector('#' + tree.fragment);
-          if (element) { element.scrollIntoView(true); }
-        }
-      }
-    });
+    this.smooth.smoothScrollToAnchor(new SimpleSmoothScrollOption(1000, 'easeOutQuart'));
    }
 
   ngAfterViewInit() {

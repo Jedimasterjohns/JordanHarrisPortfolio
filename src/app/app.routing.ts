@@ -9,6 +9,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'resume', component: ResumeComponent },
+  { path: 'about', component: AboutComponent },
 
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
