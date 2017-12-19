@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --aot -prod",
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "git push origin master && git push heroku master"
   },
   "engines": {
     "node": "6.10.3",
@@ -35,10 +36,12 @@
     "ng2-scroll-to": "^1.0.7",
     "ng2-simple-smooth-scroll": "^0.2.1",
     "rxjs": "^5.4.2",
+    "typed.js": "^2.0.6",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^5.0.0",
+    "@angular/cli": "1.5.4",
     "@angular/language-service": "^5.0.0",
     "@types/jasmine": "~2.8.2",
     "@types/jasminewd2": "~2.0.2",
