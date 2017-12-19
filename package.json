@@ -20,6 +20,7 @@
   "dependencies": {
     "@angular/animations": "^5.0.3",
     "@angular/cdk": "^5.0.0-rc.1",
+    "@angular/compiler-cli": "^5.0.0",
     "@angular/cli": "1.5.4",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
@@ -37,11 +38,13 @@
     "ng2-simple-smooth-scroll": "^0.2.1",
     "rxjs": "^5.4.2",
     "typed.js": "^2.0.6",
+    "typescript": "~2.6.1",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^5.0.0",
     "@angular/cli": "1.5.4",
+    "@angular/compiler": "^5.0.0",
     "@angular/language-service": "^5.0.0",
     "@types/jasmine": "~2.8.2",
     "@types/jasminewd2": "~2.0.2",
